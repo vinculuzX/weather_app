@@ -1,5 +1,5 @@
 import Layout from '../components/layout'
-import WheatherPage from './wheather'
+import WheatherPage from './weather'
 
 export default function Home() {
   return (
