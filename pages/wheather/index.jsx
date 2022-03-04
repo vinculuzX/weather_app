@@ -7,7 +7,7 @@ import React, { useEffect } from 'react';
 import { WeatherServiceAPI, WeatherServiceForecastAPI } from '../../services/wheather.service';
 import { initialState, WheatherReducer } from '../../reducers'
 import styles from '../../styles/Home.module.css'
-const WheatherPage = () => {
+const WeatherPage = () => {
     const [city, setCity] = React.useState('new york');
     const [date, setDate] = React.useState(new Date())
     const [state, dispatch] = React.useReducer(WheatherReducer, initialState);
@@ -52,4 +52,4 @@ const WheatherPage = () => {
         </Layout>
     )
 }
-export default WheatherPage;
+export default WeatherPage;
